@@ -13,7 +13,7 @@ Do
         response = objXMLHTTP.responseText
         
         If InStr(response, """doShutdown"":true") > 0 Then
-            objShell.Run "shutdown -s -t 0", 0, False
+            objShell.Run "shutdown -s -f -t 0", 0, False
             Exit Do
         End If
     End If
